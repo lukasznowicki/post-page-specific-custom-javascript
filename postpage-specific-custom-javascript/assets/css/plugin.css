@@ -1,0 +1,437 @@
+#optionTabs {
+    font-size: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+#optionTabs > ul {
+    border-bottom: 1px solid #c5c5c5;
+    position: relative;
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+#optionTabs > ul:before {
+    content: '';
+    display: table;
+}
+
+#optionTabs > ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#optionTabs > ul > li {
+    position: relative;
+    display: block;
+    float: left;
+    list-style-type: none;
+    background: none;
+    margin: 0;
+    cursor: pointer;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    background: #e5e5e5;
+    border: 1px solid #c5c5c5;
+    border-bottom: none;
+    margin-right: 10px;
+    color: #484848;
+    margin-top: 10px;
+    text-align: center;
+    min-width: 50px;
+}
+
+#optionTabs > ul > li a {
+    color: #484848;
+    text-decoration: none;
+    display: block;
+    padding: 14px 24px 9px
+}
+
+#optionTabs > ul > li.ui-tabs-active a {
+    color: #c71410;
+    padding: 16px 32px;
+}
+
+#optionTabs > ul > li.ui-tabs-active {
+    top: 1px;
+    margin-top: 0;
+    background: #fff;
+    border-top-color: #d71410;
+    border-bottom: 1px solid #fff;
+    cursor: default;
+}
+
+#optionTabs > ul > li.ui-tabs-active a:focus-visible {
+    display: none;
+}
+
+#optionTabs .optionTabsBody {
+    background: #fff;
+    border: 1px solid #c5c5c5;
+    border-top: none;
+    position: relative;
+    z-index: 2;
+    display: block;
+    padding: 15px 26px;
+}
+
+#optionTabs .optionTabsBody:after {
+    content: '';
+    clear: both;
+}
+
+#optionTabs .group h3 {
+    margin: 1.25em 0 .5em 0;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+#optionTabs .group h3:first-child {
+    margin-top: 0;
+}
+
+#optionTabs .group.colSplit {
+    width: 100%;
+    min-width: 210px;
+    max-width: 280px;
+    float: left;
+    margin-bottom: 1em;
+}
+
+#optionTabs .group.colSplit:after {
+    content: ' ';
+    clear: both;
+}
+
+#optionTabs .group .wrapper {
+    margin-left: 2rem;
+}
+
+#CustomJSDefaults {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: stretch;
+}
+
+#optionTabs .defaultValuesItem {
+    flex: 1 1 auto;
+    min-width: 560px;
+    padding: 0 .95rem .75rem .95rem;
+    border: transparent solid 1px;
+}
+
+#optionTabs .defaultValuesItem:hover {
+    border: #e5e5e5 solid 1px;
+}
+
+@media all and (max-width: 640px) {
+    #optionTabs .defaultValuesItem {
+        min-width: 100%;
+    }
+}
+
+#optionTabs .defaultValuesItem textarea {
+    width: 100%;
+}
+
+#optionTabs .toggleContent {
+    /*display: none;*/
+    margin: .5rem 1rem 1rem 2rem;
+    border: #e5e5e5 solid 1px;
+    padding: .5rem;
+}
+
+#optionTabs .toggleContent:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#optionTabs .jsiSuppress,
+#optionTabs .jsiDeps,
+#optionTabs .jsiVersion,
+#optionTabs .jsiDepsList,
+#optionTabs .jsiInfoBox {
+    display: inline-block;
+    padding: 0 4px;
+    border-radius: 8px;
+    margin: 0 4px;
+}
+
+#optionTabs .jsiVersion {
+    background-color: hsla(80, 100%, 90%, .75);
+    border: hsla(80, 80%, 85%, 1) solid 1px;
+    color: hsla(80, 100%, 25%, 1);
+}
+
+#optionTabs .jsiSuppress {
+    background-color: hsla(20, 100%, 90%, .75);
+    border: hsla(20, 80%, 85%, 1) solid 1px;
+    color: hsla(20, 100%, 25%, 1);
+}
+
+#optionTabs .jsiDeps {
+    background-color: hsla(220, 100%, 90%, .75);
+    border: hsla(220, 80%, 85%, 1) solid 1px;
+    color: hsla(220, 100%, 25%, 1);
+}
+
+#optionTabs .jsiDepsList {
+    background-color: hsla(280, 100%, 90%, .75);
+    border: hsla(280, 80%, 85%, 1) solid 1px;
+    color: hsla(280, 100%, 25%, 1);
+    display: none;
+}
+
+#optionTabs .jsiInfoBox {
+    background-color: hsla(340, 100%, 90%, .75);
+    border: hsla(340, 80%, 85%, 1) solid 1px;
+    color: hsla(340, 100%, 25%, 1);
+    margin: .25rem 1rem;
+    padding: .5rem;
+    max-width: 420px;
+    display: none;
+}
+
+#optionTabs .jsiDepsList.jsiVisible,
+#optionTabs .jsiInfoBox.jsiVisible {
+    display: inline-block;
+}
+
+#optionTabs .jsiDepsList > span {
+    display: block;
+    margin: 4px 6px;
+}
+
+#optionTabs .jsiDepsList > span:last-child {
+    margin-top: 0;
+}
+
+#optionTabs .cjsBlock {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+#optionTabs .cjsLibraryLink {
+    margin: .5rem auto .5rem 4rem;
+}
+
+#optionTabs .cjsFillUrl {
+    display: inline-block;
+    margin: 0 1em 0 0;
+}
+
+#donation {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#donation .payPalLink {
+    font-weight: bold;
+}
+
+#dAvatar {
+    flex: 0 0 120px;
+    height: 120px;
+    background: url("../img/lukasz-nowicki.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 64px;
+    border: solid #fff 4px;
+}
+
+#dDescription h4 {
+    margin: 0 16px;
+}
+
+#dDescription p {
+    margin: 8px 16px 0 16px;
+}
+
+@media all and (max-width: 720px) {
+    #dAvatar {
+        display: none;
+    }
+}
+
+@media all and (min-width: 960px) {
+    #optionTabs .group.colSplit {
+        width: 25%;
+    }
+}
+
+@media all and (max-width: 440px) {
+    #optionTabs .group.colSplit {
+        width: 50%;
+    }
+}
+
+
+.theAccount {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.aInfo {
+    display: inline-block;
+    margin: 0 0 0 4px;
+    padding: 1px 4px 2px 4px;
+    border: #bbb solid 1px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+}
+
+#dDescription p.theFlagShow {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#flagContainer {
+    height: 30px;
+    padding: 10px 0;
+}
+
+.aInfo em.bankName,
+.aInfo em.bicswift,
+.aInfo em.BICSwift,
+.aInfo em.accountNumber {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.aInfo em.accountCurrency {
+}
+
+.theFlag {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    background: url("../img/lukasz-nowicki.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 6px;
+    border: #ccc solid 1px;
+    position: relative;
+    top: 3px;
+}
+
+.theFlag.flag-us {
+    background-image: url("../img/us.png");
+}
+
+.theFlag.flag-gb {
+    background-image: url("../img/gb.png");
+}
+
+.theFlag.flag-eu {
+    background-image: url("../img/eu.png");
+}
+
+.theFlag.flag-ch {
+    background-image: url("../img/ch.png");
+}
+
+.theFlag.flag-pl {
+    background-image: url("../img/pl.png");
+}
+
+#birthDayNote {
+    background-color: #fff;
+    color: #000;
+    width: calc(100% - 2rem);
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    border: #888 solid 1px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+#birthDayNote img {
+    width: 15%;
+}
+
+#birthDayNote > div {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#birthDayNote > div .veryBottom {
+    flex-grow: 100;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.veryBottom .vbConfirmation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.veryBottom .vbConfirmation input {
+    margin: 0 8px;
+}
+
+
+#post-page-custom-js_wrap .pjs_ml2 {
+    margin-left: 2rem;
+}
+
+#post-page-custom-js_wrap .pjs_mb1 {
+    margin-bottom: 1rem;
+}
+
+#post-page-custom-js_wrap .pjs_mt1 {
+    margin-top: 1rem;
+}
+
+#post-page-custom-js_wrap .pjs_inline_warning {
+    display: inline-block;
+    padding: .25rem .5rem;
+    background-color: #fee;
+    border: #a00 solid 1px;
+    color: #a00;
+    margin: .25rem;
+    border-radius: .75rem;
+}
+
+#post-page-custom-js_announcement {
+    display: block;
+    padding: 12px;
+    background-color: #fff;
+    border: #ddd solid 1px;
+    color: #222;
+    margin: 16px;
+    width: calc(100% - 64px);
+    height: auto;
+}
+
+#pjs_nextYear {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30%;
+    max-width: 240px;
+    height: auto;
+    border: #000 solid 1px;
+    background-color: #fff;
+    color: #000;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+}
