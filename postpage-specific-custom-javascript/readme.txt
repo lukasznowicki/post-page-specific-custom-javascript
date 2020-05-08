@@ -47,10 +47,4 @@ Yes, it is under GPLv2 (and later) licence. However, you can donate me a few dol
 
 = 0.1.0 =
 * Initial release
-* Release date: 2020-05-02
-* Compatibility: 5.3 and previous
-* Options page for plugin
-* Default JS for post and page
-* JavaScript highlighting for posts, page and options (for default JS code)
-* Allow user to include jQuery
-* Screenshots, icons and header image for WordPress repository
+* Release date: 2020-05-11
